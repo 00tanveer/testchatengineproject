@@ -1,7 +1,12 @@
 {
   "name": "angularjs",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "chat-engine": "^0.9.18",
+    "chat-engine-online-user-search": "0.0.10",
+    "chat-engine-random-username": "0.0.5",
+    "chat-engine-typing-indicator": "0.0.9"
+  },
   "scripts": {
     "test": "gulp test"
   },

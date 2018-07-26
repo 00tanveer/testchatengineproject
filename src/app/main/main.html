@@ -1,5 +1,22 @@
-<div layout="vertical" layout-fill>
-  hello
+<div ng-app="chatApp" layout="vertical" layout-fill>
+  hello world !
+  <div class="container-fluid" ng-controller="chatAppController">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-block">
+                    <h4 class="card-title">ChatEngine</h4>
+                    <p class="card-text">Your are connect with uuid {{me.uuid}}</p>
+                </div>
+                <ul id="online-list" class="list-group list-group-flush">
+                    <li class="list-group-item" ng-repeat="(uuid, user) in chat.users">
+                        <a href="">{{uuid}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
   <!-- <md-content>
     <header>
       <acme-navbar creation-date="main.creationDate"></acme-navbar>
